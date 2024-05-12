@@ -1,0 +1,27 @@
+body {
+    background-color: #6c757d;
+}
+
+.calculator {
+    width: 19%;
+}
+
+.oper {
+    width: 53px;
+
+}
+
+button {
+    font-weight: 1000 !important;
+    transition: scale 0.2s, transform 0.2s !important;
+
+    &:hover {
+        scale: 1.05;
+    }
+}
+.number{
+    width: 67px;
+}
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="d-flex align-items-center justify-content-center vh-100">
+    <div class="calculator shadow d-flex justify-content-center flex-column gap-2 p-5 shadow rounded bg-dark ">
+        <div class="d-flex justify-content-between gap-2">
+            <div class="bg-info-subtle rounded p-3 w-75 text output">Hello!</div>
+            <button id="reset" onclick="calc.resetfunc()" class="btn btn-danger w-25">C</button>
+        </div>
+        <div class="operatos  d-flex gap-3 w-100">
+            <button class="btn oper bg-dark-subtle">+</button>
+            <button class="btn oper bg-dark-subtle">-</button>
+            <button class="btn oper bg-dark-subtle">*</button>
+            <button class="btn oper bg-dark-subtle">%</button>
+        </div>
+        <div class="numbers d-grid w-100 gap-1">
+            <div class="col-sm gap-1">
+                <button class="bg-light-subtle number btn">1</button>
+                <button class="bg-light-subtle number btn">2</button>
+                <button class="bg-light-subtle number btn">3</button>
+
+            </div>
+            <div class="col-sm">
+                <button class="bg-light-subtle number btn">4</button>
+                <button class="bg-light-subtle number btn">5</button>
+                <button class="bg-light-subtle number btn">6</button>
+            </div>
+            <div class="col-sm">
+                <button class="bg-light-subtle number btn">7</button>
+                <button class="bg-light-subtle number btn">8</button>
+                <button class="bg-light-subtle number btn">9</button>
+            </div>
+            <button class="bg-light-subtle number btn">0</button>
+        </div>
+    </div>
+</main>
+<script src="js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
