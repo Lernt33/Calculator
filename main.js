@@ -48,7 +48,12 @@ var Calculator = /** @class */ (function () {
         }
         else {
             console.log('Else');
-            this.output.textContent = element.textContent;
+            if (this.output.textContent == '0') {
+                this.output.textContent = element.textContent
+            }
+            else{
+                this.output.textContent+=element.textContent
+            }
         }
         this.operpressed = false;
     };
