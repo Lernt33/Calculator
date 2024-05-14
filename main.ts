@@ -5,7 +5,7 @@ class Calculator {
     private numbers: NodeList;
     private choosennumber!: number;
     private choosenoper!: string;
-    private operpressed:boolean = false
+    private operpressed: boolean = false
 
     constructor(output: string, reset: string, oper: string, numbers: string) {
         this.choosennumber = null
@@ -39,7 +39,7 @@ class Calculator {
     }
 
     numberpress(element) {
-        if (this.choosenoper != null && this.operpressed==true) {
+        if (this.choosenoper != null && this.operpressed == true) {
             this.choosennumber = element.textContent
             // console.log(`Current output ${this.output.textContent} oper=${this.choosenoper} second number ${this.choosennumber}`)
             if (this.choosenoper == '+') {
@@ -51,14 +51,20 @@ class Calculator {
             if (this.choosenoper == '*') {
                 this.output.textContent = (Number(this.output.textContent) * Number(this.choosennumber)).toString();
             }
-            if (this.choosenoper == '/') {
+            if (this.choosenoper == '%') {
+                console.log((Number(this.output.textContent) / Number(this.choosennumber)).toString())
                 this.output.textContent = (Number(this.output.textContent) / Number(this.choosennumber)).toString();
             }
         } else {
             console.log('Else')
-            this.output.textContent = element.textContent
+            if (this.output.textContent == '0') {
+                this.output.textContent = element.textContent
+            }
+            else{
+                this.output.textContent+=element.textContent
+            }
         }
-        this.operpressed=false
+        this.operpressed = false
     }
 }
 
