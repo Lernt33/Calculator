@@ -42,7 +42,7 @@ var Calculator = /** @class */ (function () {
             if (this.choosenoper == '*') {
                 this.output.textContent = (Number(this.output.textContent) * Number(this.choosennumber)).toString();
             }
-            if (this.choosenoper == '/') {
+            if (this.choosenoper == '%') {
                 this.output.textContent = (Number(this.output.textContent) / Number(this.choosennumber)).toString();
             }
         }
