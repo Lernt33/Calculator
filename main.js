@@ -47,7 +47,7 @@ var Calculator = /** @class */ (function () {
             }
         }
         else {
-            console.log('Else');
+            // console.log('Else');
             if (this.output.textContent == '0') {
                 this.output.textContent = element.textContent
             }
